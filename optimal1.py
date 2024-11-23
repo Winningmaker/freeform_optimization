@@ -38,3 +38,4 @@ result_p=laplacian_p+gray_sym-one_sym
 result_p = result_p.applyfunc(lambda x: x**2)
 
 print(result_p[0,0])
+

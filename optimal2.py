@@ -10,14 +10,5 @@ gray_y=gray.shape[1]
 #全一矩阵
 one=np.ones((gray_x,gray_y))
 
-# 将灰度图像缩放到50x50的大小
-resized_gray = cv2.resize(gray, (50, 50), interpolation=cv2.INTER_AREA)
-
-# 显示图像
-cv2.imshow('Image', resized_gray)
-
-# 等待按键事件
-cv2.waitKey(0)
-
-# 关闭所有窗口
-cv2.destroyAllWindows()
+#最小二乘操作解出p表达式
+b=gray-one
